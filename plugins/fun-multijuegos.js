@@ -69,7 +69,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 if (command == 'multijuegos') { 
   global.db.data.users[m.sender].limit += 1
 
-              //let gata = `${pickRandom([`𝙋𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧!!`,`𝙎𝙞𝙜𝙪𝙚 𝙟𝙪𝙜𝙖𝙣𝙙𝙤 𝙥𝙖𝙧𝙖 𝙜𝙖𝙣𝙖𝙧 SharkCoins!!`,`𝙎𝙖𝙗𝙞𝙖𝙨 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧? 𝘼𝙝𝙤𝙧𝙖 𝙮𝙖 𝙡𝙤 𝙨𝙖𝙗𝙚𝙨!!`])}`
+              //let shark = `${pickRandom([`𝙋𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧!!`,`𝙎𝙞𝙜𝙪𝙚 𝙟𝙪𝙜𝙖𝙣𝙙𝙤 𝙥𝙖𝙧𝙖 𝙜𝙖𝙣𝙖𝙧 SharkCoins!!`,`𝙎𝙖𝙗𝙞𝙖𝙨 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧? 𝘼𝙝𝙤𝙧𝙖 𝙮𝙖 𝙡𝙤 𝙨𝙖𝙗𝙚𝙨!!`])}`
             //let s = `Bienvenido al Multijuegos Aleeatorios`
 
  const templateButtonsReplyMessage = [
@@ -91,7 +91,7 @@ conn.sendMessage(m.chat, t, m)
   
   if (command == 'juegos') { 
     global.db.data.users[m.sender].money += 5
-    let gata = `${pickRandom([`𝙋𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧!!`,`𝙎𝙞𝙜𝙪𝙚 𝙟𝙪𝙜𝙖𝙣𝙙𝙤 𝙥𝙖𝙧𝙖 𝙜𝙖𝙣𝙖𝙧 SharkCoins!!`,`𝙎𝙖𝙗𝙞𝙖𝙨 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧? 𝘼𝙝𝙤𝙧𝙖 𝙮𝙖 𝙡𝙤 𝙨𝙖𝙗𝙚𝙨!!`])}`
+    let shark = `${pickRandom([`𝙋𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝘿𝙞𝙖𝙢𝙖𝙣𝙩𝙚𝙨 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧!!`,`𝙎𝙞𝙜𝙪𝙚 𝙟𝙪𝙜𝙖𝙣𝙙𝙤 𝙥𝙖𝙧𝙖 𝙜𝙖𝙣𝙖𝙧 SharkCoins!!`,`𝙎𝙖𝙗𝙞𝙖𝙨 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙂𝙖𝙣𝙖𝙧 𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖 𝙖𝙡 𝙅𝙪𝙜𝙖𝙧? 𝘼𝙝𝙤𝙧𝙖 𝙮𝙖 𝙡𝙤 𝙨𝙖𝙗𝙚𝙨!!`])}`
              let c = `${usedPrefix}`
               let juegos = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}topgays`,`${c}topotakus`,`${c}mates medium`,`${c}mates noob`])}`
                let juegos2 = `${pickRandom([`${c}reto`,`${c}verdad`,`${c}formarpareja`,`${c}ppt tijeras`,`${c}ppt piedra`])}`
@@ -113,7 +113,7 @@ conn.sendMessage(m.chat, t, m)
  
 let tt = {
 text: ss,
-footer: gata,
+footer: shark,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, tt, m)
@@ -122,7 +122,7 @@ conn.sendMessage(m.chat, tt, m)
   
  if (command == 'juegos') {
    global.db.data.users[m.sender].money += 10
-   let gata = `${pickRandom([`𝘿𝙚𝙢𝙪𝙚𝙨𝙩𝙧𝙖 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙡𝙡𝙚𝙜𝙖𝙧 𝙖𝙡 𝙏𝙤𝙥 1!!`,`𝙈𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙢𝙖𝙨 𝙅𝙪𝙚𝙜𝙖𝙨 𝙩𝙪 𝙍𝙖𝙣𝙜𝙤 𝙩𝙖𝙢𝙗𝙞𝙚𝙣 𝙨𝙪𝙗𝙞𝙧𝙖!!`,`𝙋𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖 𝙚𝙣 𝙚𝙡 𝙢𝙤𝙙𝙤 𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 𝙮 𝙂𝙖𝙣𝙖 𝙧𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖𝙨!!`])}`
+   let shark = `${pickRandom([`𝘿𝙚𝙢𝙪𝙚𝙨𝙩𝙧𝙖 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙨 𝙡𝙡𝙚𝙜𝙖𝙧 𝙖𝙡 𝙏𝙤𝙥 1!!`,`𝙈𝙞𝙚𝙣𝙩𝙧𝙖𝙨 𝙢𝙖𝙨 𝙅𝙪𝙚𝙜𝙖𝙨 𝙩𝙪 𝙍𝙖𝙣𝙜𝙤 𝙩𝙖𝙢𝙗𝙞𝙚𝙣 𝙨𝙪𝙗𝙞𝙧𝙖!!`,`𝙋𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖 𝙚𝙣 𝙚𝙡 𝙢𝙤𝙙𝙤 𝙈𝙪𝙡𝙩𝙞𝙟𝙪𝙚𝙜𝙤𝙨 𝙮 𝙂𝙖𝙣𝙖 𝙧𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖𝙨!!`])}`
             let c = `${usedPrefix}`
              let juegos = `${pickRandom([`${c}lesbiana Yo`,`${c}doxxear`,`${c}pajero Yo`,`${c}love Tú Mejor Amigo/a`,`${c}reto`,`${c}verdad`,`${c}ppt piedra`,`${c}puta Yo`,`${c}mates medium`,`${c}simi Que`])}`
               let juegos2 = `${pickRandom([`${c}ppt piedra`,`${c}mates noob`,`${c}pregunta El cielo y el infierno existen?`,`${c}pregunta Hay una sola vida?`,`${c}pregunta Los robots y androides podrán tener sentimientos en algún momento?`,`${c}pregunta De verdad el universo es infinito?`,`${c}pajera Yo`,`${c}manca Yo`,`${c}manco Yo`,`${c}pregunta Hay un destino?`,`${c}pregunta Se puede tener todo lo que se quiere?`])}`
@@ -142,7 +142,7 @@ conn.sendMessage(m.chat, tt, m)
 ]
 let ttt = {
 text: sss,
-footer: gata,
+footer: shark,
 templateButtons: templateButtonsReplyMessage
 } 
 conn.sendMessage(m.chat, ttt, m)
@@ -150,7 +150,7 @@ conn.sendMessage(m.chat, ttt, m)
   
   if (command == 'juegos') { 
     global.db.data.users[m.sender].exp += 20
-    let gata = `${pickRandom([`𝙀𝙡𝙞𝙟𝙚 𝙏𝙪 𝙀𝙢𝙤𝙟𝙞 𝙁𝙖𝙫𝙤𝙧𝙞𝙩𝙤 𝙥𝙖𝙧𝙖 𝙅𝙪𝙜𝙖𝙧!!`,`𝘼𝙙𝙞𝙫𝙞𝙣𝙖 𝙚𝙡 𝙋𝙧𝙤𝙭𝙞𝙢𝙤 ??𝙪𝙚𝙜𝙤!!`,`𝘼𝙙𝙞𝙫𝙞𝙣𝙖 𝙚𝙡 𝙋𝙧𝙤𝙭𝙞𝙢𝙤 𝙅𝙪𝙚𝙜𝙤!!`,`𝙈𝙞𝙣𝙞𝙟𝙪𝙚𝙜𝙤𝙨 𝙚𝙨𝙩á𝙣 𝙚𝙨𝙥𝙚𝙧𝙖𝙣𝙙𝙤 𝙚𝙣 𝙨𝙚𝙧 𝙅𝙪𝙜𝙖𝙙𝙤𝙨!!`])}`
+    let shark = `${pickRandom([`𝙀𝙡𝙞𝙟𝙚 𝙏𝙪 𝙀𝙢𝙤𝙟𝙞 𝙁𝙖𝙫𝙤𝙧𝙞𝙩𝙤 𝙥𝙖𝙧𝙖 𝙅𝙪𝙜𝙖𝙧!!`,`𝘼𝙙𝙞𝙫𝙞𝙣𝙖 𝙚𝙡 𝙋𝙧𝙤𝙭𝙞𝙢𝙤 ??𝙪𝙚𝙜𝙤!!`,`𝘼𝙙𝙞𝙫𝙞𝙣𝙖 𝙚𝙡 𝙋𝙧𝙤𝙭𝙞𝙢𝙤 𝙅𝙪𝙚𝙜𝙤!!`,`𝙈𝙞𝙣𝙞𝙟𝙪𝙚𝙜𝙤𝙨 𝙚𝙨𝙩á𝙣 𝙚𝙨𝙥𝙚𝙧𝙖𝙣𝙙𝙤 𝙚𝙣 𝙨𝙚𝙧 𝙅𝙪𝙜𝙖𝙙𝙤𝙨!!`])}`
                  let c = `${usedPrefix}`
                   let juegos = `${pickRandom([`${c}lesbiana Yo`,`${c}doxxear`,`${c}pajero Yo`,`${c}love Tú Mejor Amigo/a`,`${c}reto`,`${c}verdad`,`${c}ppt piedra`,`${c}puta Yo`,`${c}mates medium`,`${c}simi Que`])}`
                    let juegos2 = `${pickRandom([`${c}ppt piedra`,`${c}mates noob`,`${c}pregunta El cielo y el infierno existen?`,`${c}pregunta Hay una sola vida?`,`${c}pregunta Los robots y androides podrán tener sentimientos en algún momento?`,`${c}pregunta De verdad el universo es infinito?`,`${c}pajera Yo`,`${c}manca Yo`,`${c}manco Yo`,`${c}pregunta Hay un destino?`,`${c}pregunta Se puede tener todo lo que se quiere?`])}`
@@ -170,7 +170,7 @@ conn.sendMessage(m.chat, ttt, m)
 ]
 let tttt = {
 text: ssss,
-footer: `${gata}`,
+footer: `${shark}`,
 templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tttt, m)  
@@ -180,7 +180,7 @@ conn.sendMessage(m.chat, tttt, m)
       
    if (command == 'juegos') { 
       global.db.data.users[m.sender].exp += 20
-     let gata = `${pickRandom([`𝘾𝙖𝙧𝙜𝙖 𝙢𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝘽𝙤𝙩𝙤𝙣 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨!!`,`𝘿𝙞𝙣𝙖𝙢𝙞𝙘𝙖𝙨, 𝙍𝙚𝙩𝙤𝙨, 𝘼𝙥𝙪𝙚𝙨𝙩𝙖𝙨, 𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 𝙮 𝙢𝙪𝙘𝙝𝙤 𝙢𝙖𝙨!!`])}`
+     let shark = `${pickRandom([`𝘾𝙖𝙧𝙜𝙖 𝙢𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨 𝙪𝙨𝙖𝙣𝙙𝙤 𝙚𝙡 𝘽𝙤𝙩𝙤𝙣 𝙈𝙖𝙨 𝙅𝙪𝙚𝙜𝙤𝙨!!`,`𝘿𝙞𝙣𝙖𝙢𝙞𝙘𝙖𝙨, 𝙍𝙚𝙩𝙤𝙨, 𝘼𝙥𝙪𝙚𝙨𝙩𝙖𝙨, 𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 𝙮 𝙢𝙪𝙘𝙝𝙤 𝙢𝙖𝙨!!`])}`
                  let c = `${usedPrefix}`
                   let juegos2 = `${pickRandom([`${c}ppt piedra`,`${c}mates noob`,`${c}pregunta El cielo y el infierno existen?`,`${c}pregunta Hay una sola vida?`,`${c}pregunta Los robots y androides podrán tener sentimientos en algún momento?`,`${c}pregunta De verdad el universo es infinito?`,`${c}pajera Yo`,`${c}manca Yo`,`${c}manco Yo`,`${c}pregunta Hay un destino?`,`${c}pregunta Se puede tener todo lo que se quiere?`])}`
                    let juegos3 = `${pickRandom([`${c}puto Él de arriba`,`${c}puta La de arriba`,`${c}pregunta Se puede viajar en el tiempo?`,`${c}pregunta Hay un solo Universo?`,`${c}rata Yo`,`${c}mates impossible`,`${c}prostituto Yo`,`${c}prostituta Yo`,`${c}pregunta Soy Pro en el Grupo?`,`${c}mates impossible2`,`${c}rata Yo`])}`
@@ -198,7 +198,7 @@ conn.sendMessage(m.chat, tttt, m)
 ]
 let tttt = {
 text: ssss,
-footer: gata,
+footer: shark,
 templateButtons: templateButtonsReplyMessage
   } 
 conn.sendMessage(m.chat, tttt, m)  
