@@ -34,7 +34,7 @@ let animeingfo =
 𝙀𝙉𝙇𝘼𝘾𝙀 | 𝙐𝙍𝙇
 ❣ ${url}`
 await conn.sendFile(m.chat, image_url, '', animeingfo, m) 
-let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [

@@ -15,7 +15,7 @@ if (!isY) await conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
 ┃ ${video['480p'].fileSizeH}
-╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m)
+╰━━━━━━❰ *🦈 ${vs}* ❱━━━━━⬣`.trim(), m)
   
 await conn.sendFile(m.chat, link, title + '.mp3', `
 ╭━━❰  ${wm}  ❱━━⬣
@@ -24,7 +24,7 @@ await conn.sendFile(m.chat, link, title + '.mp3', `
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 🧡 𝙋𝙀𝙎𝙊 | 𝙎𝙄𝙕𝙀
 ┃ ${video['480p'].fileSizeH}
-╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣`.trim(), m, null, {
+╰━━━━━━❰ *🦈 ${vs}* ❱━━━━━⬣`.trim(), m, null, {
   
 asDocument: 0
 })
@@ -33,7 +33,7 @@ m.reply(`${fg}𝙀𝙎 𝙋𝙊𝙎𝙄𝘽𝙇𝙀 𝙌𝙐𝙀 𝙀𝙇 𝘼�
 console.log(e)  
 }
   
-let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [

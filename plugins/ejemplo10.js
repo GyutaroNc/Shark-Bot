@@ -32,9 +32,9 @@ let hola = `Hola1`.trim()
 //m.reply(m.chat, hola, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}}) 
+//sourceUrl: `http://wa.me/+50582783643`}}}) 
 
 m.reply(`hola`) }}
   
@@ -43,9 +43,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
  m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -55,9 +55,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -67,9 +67,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
  m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -79,9 +79,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
  m.reply(`hola`) }}
 //await m.reply(`hola`) }
 
@@ -91,9 +91,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //wait m.reply(`hola`) }
 
@@ -103,9 +103,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -115,9 +115,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -127,9 +127,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -139,9 +139,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -151,9 +151,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
 
@@ -163,9 +163,9 @@ if (command == 'nido') {
 //conn.reply(m.chat, ejemplo, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 //title: '𝐍𝐈𝐃𝐎𝐒.',
-//body: '✦҈͜͡➳👻𝕲𝔥𝔬𝔰𝔱•✓☆ۣۜۜ͜͡🌹',         
+//body: '✦҈͜͡➳👻𝙴𝚕 𝙲𝚑𝚎𝚖𝚊•✓☆ۣۜۜ͜͡🌹',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-//sourceUrl: `http://wa.me/+51996089079`}}})
+//sourceUrl: `http://wa.me/+50582783643`}}})
 m.reply(`hola`) }}
  //await m.reply(`hola`) }
  }
