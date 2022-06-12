@@ -31,10 +31,10 @@ Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}*
 
 ${sortedLevel.slice(0, len).map(({ jid, level }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *Nivel ${level}*`).join`\n`}
 
-▢ *TOP ${len} GATACOINS* •
+▢ *TOP ${len} SHARKCOINS* •
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length}*
 
-${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
+${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} SharkCoins*`).join`\n`}
 `.trim()
   conn.reply(m.chat, text, m, {
     contextInfo: {
