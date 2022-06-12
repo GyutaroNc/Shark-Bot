@@ -1,4 +1,3 @@
-/* CREDITOS A https://github.com/FG98F */
 const dir = [
   'https://tinyurl.com/ygms8wvy',
   'https://tinyurl.com/yhdyhnap',
