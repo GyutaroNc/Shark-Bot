@@ -70,8 +70,8 @@ rows: [
 {title: "💎 𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖𝙧 | 𝙐𝙥𝙙𝙖𝙩𝙚 💎", description: "𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝙍 𝘼 𝙇𝘼 𝙐𝙇𝙏𝙄𝙈𝘼 𝙑𝙀𝙍𝙎𝙄𝙊𝙉\n𝙐𝙋𝘿𝘼𝙏𝙀 𝙏𝙊 𝙏𝙃𝙀 𝙇𝘼𝙏𝙀𝙎𝙏 𝙑𝙀𝙍𝙎𝙄𝙊𝙉", rowId: `${usedPrefix}update`},
 {title: "💎 𝙍𝙚𝙞𝙣𝙞𝙘𝙞𝙖𝙧 | 𝙍𝙚𝙨𝙩𝙖𝙧𝙩 💎", description: "𝙍𝙀𝙄𝙉𝙄𝘾𝙄𝘼𝙍 𝙇𝘼 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙇\n𝙍𝙀𝙎𝙏𝘼𝙍𝙏 𝙏𝙃𝙀 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝙇", rowId: `${usedPrefix}reiniciar`},
 {title: "💎 𝘽𝙤𝙧𝙧𝙖𝙧𝙩𝙢𝙥 | 𝘾𝙡𝙚𝙖𝙧𝙩𝙢𝙥 💎", description: "𝘽𝙊𝙍𝙍𝘼𝙍 𝘼𝙍𝘾𝙃𝙄𝙑𝙊𝙎 𝘿𝙀 𝘾𝙊𝙉𝙎𝙐𝙈𝙊\n𝘿𝙀𝙇𝙀𝙏𝙀 𝘾𝙊𝙉𝙎𝙐𝙈𝙋𝙏𝙄𝙊𝙉 𝙁𝙄𝙇𝙀𝙎", rowId: `${usedPrefix}clear`},
-{title: "💎 𝘽𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝘽𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙊𝙈𝙄𝙏𝙄𝙍 𝙐𝙎𝙊 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙀𝙉 𝘾𝙃𝘼𝙏𝙎\n𝘽𝙔𝙋𝘼𝙎𝙎 𝙐𝙎𝙄𝙉𝙂 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙄𝙉 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}ban1`},   
-{title: "💎 𝘿𝙚𝙨𝙗𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝙐𝙣𝙗𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙍𝙀𝘼𝙉𝙐𝘿𝘼𝙍 𝙐𝙎𝙊 𝘿𝙀 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙀𝙉 𝘾𝙃𝘼𝙏\n𝙍𝙀𝙎𝙐𝙈𝙀 𝙐𝙎𝙀 𝙊𝙁 𝙂𝘼𝙏𝘼𝘽𝙊𝙏-𝙈𝘿 𝙄𝙉 𝘾𝙃𝘼𝙏", rowId: `${usedPrefix}}desban1`},    
+{title: "💎 𝘽𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝘽𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙊𝙈𝙄𝙏𝙄𝙍 𝙐𝙎𝙊 𝘿𝙀 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 𝙀𝙉 𝘾𝙃𝘼𝙏𝙎\n𝘽𝙔𝙋𝘼𝙎𝙎 𝙐𝙎𝙄𝙉𝙂 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 𝙄𝙉 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}ban1`},   
+{title: "💎 𝘿𝙚𝙨𝙗𝙖𝙣𝙚𝙖𝙧 𝘾𝙝𝙖𝙩 | 𝙐𝙣𝙗𝙖𝙣 𝘾𝙝𝙖𝙩 💎", description: "𝙍𝙀𝘼𝙉𝙐𝘿𝘼𝙍 𝙐𝙎𝙊 𝘿𝙀 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 𝙀𝙉 𝘾𝙃𝘼𝙏\n𝙍𝙀𝙎𝙐𝙈𝙀 𝙐𝙎𝙀 𝙊𝙁 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 𝙄𝙉 𝘾𝙃𝘼𝙏", rowId: `${usedPrefix}}desban1`},    
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙂𝙚𝙣𝙚𝙧𝙖𝙡 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝘼𝙡𝙡 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙏𝙊𝘿𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙀𝙑𝙀𝙍𝙔𝙊𝙉𝙀", rowId: `${usedPrefix}bc`}, 
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙋𝙧𝙞𝙫𝙖𝙙𝙤 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙋𝙧𝙞𝙫𝙖𝙩𝙚 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼𝙇 𝙋𝙍𝙄𝙑𝘼𝘿𝙊\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘾𝙃𝘼𝙏𝙎", rowId: `${usedPrefix}comunicarpv`},  
 {title: "💎 𝘾𝙤𝙢𝙪𝙣𝙞𝙘𝙖𝙙𝙤 𝙖 𝙂𝙧𝙪𝙥𝙤𝙨 | 𝘽𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 𝙂𝙧𝙤𝙪𝙥𝙨 💎", description: "𝙀𝙉𝙑𝙄𝘼𝙍 𝙐𝙉 𝘼𝙉𝙐𝙉𝘾𝙄𝙊 𝘼 𝙂𝙍𝙐𝙋𝙊𝙎\n𝙎𝙀𝙉𝘿 𝘼𝙉 𝘼𝘿 𝙏𝙊 𝙂𝙍𝙊𝙐𝙋𝙎", rowId: `${usedPrefix}bcgc`},  
@@ -84,18 +84,18 @@ let username = conn.getName(who)
 
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
+🦈 *¡HOLA!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
 ┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺ ${role}*
-┃✪ *GATACOINS ➺ $ ${money}*
+┃✪ *SHARKCOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
 ┃⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️⚙️
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
+╰━━━━━━〔 🦈 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄Ó𝙉 | 𝙄𝙉𝙁𝙊 𝙈𝙀𝙉𝙐 〕━⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -109,7 +109,7 @@ let menu = `
 ┃💎➺ _${usedPrefix}comunicargrupos | broadcastgc_
 ┃💎➺ _${usedPrefix}bcgc_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
