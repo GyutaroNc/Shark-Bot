@@ -8,7 +8,7 @@ let json = await res.json()
 if (res.status !== 200) throw await res.text()
 if (!json.status) throw json
 let thumb = await (await fetch(json.result.user_picture)).buffer()
-let gata = `
+let shark = `
 👤 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) | 𝙐𝙎𝙀𝙍
 ${json.result.username}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -30,11 +30,11 @@ ${json.result.video}
 👀 𝘽𝙄𝙊𝙂𝙍𝘼𝙁Í𝘼 | 𝘿𝙀𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉
 ${json.result.bio}
 `.trim()
-await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
+await conn.sendFile(m.chat, res2, 'error.jpg', shark, m, false)
 } catch (e) {
 throw `${fg}𝙉𝙊 𝙎𝙀 𝙀𝙉𝘾𝙊𝙉𝙏𝙍𝙊 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙎𝙐𝘼𝙍𝙄𝙊.\n\n𝙉𝙊 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 𝙁𝙊𝙐𝙉𝘿.`
 }
-let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*
+let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
