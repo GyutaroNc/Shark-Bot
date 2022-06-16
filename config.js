@@ -91,9 +91,9 @@ global.ig = 'https://www.instagram.com/jm_hefesto'
 global.sharkig = ig
 
 global.md = 'https://github.com/GyutaroNc/Shark-Bot'
-global.shark= md
+global.shark = md
 
-global.nn = 'https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW'
+global.nn = 'https://chat.whatsapp.com/INEgu0k1WsLKnUlzHQXija'
 global.nngrupo = nn
 
 global.paypal = 'https://paypal.me/Chemita81'
