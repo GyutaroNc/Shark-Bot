@@ -20,7 +20,7 @@ case 'video': return `
     }
   }).filter(v => v).join('\n====================================\n')
  await m.reply(teks)
- let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
+ let info = `👻 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n👻 *Find out about what's new and remember to have the latest version.*
   `.trim()
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘽𝙪𝙨𝙦𝙪𝙚𝙙𝙖𝙨 | 𝙎𝙚𝙖𝙧𝙘𝙝𝙚𝙨 🔎', '#buscarmenu'],
@@ -32,4 +32,6 @@ handler.help = ['', 'earch'].map(v => 'yts' + v + ' <pencarian>')
 handler.tags = ['tools']
 handler.command = /^ytbuscar|yts(earch)?$/i
 handler.exp = 70
+handler.limit = 1
+handler.level = 4
 export default handler

@@ -1,4 +1,3 @@
-/* CREDITOS A https://github.com/FG98F */
 import axios from 'axios'
 import hx from 'hxz-api' 
 
@@ -13,7 +12,7 @@ conn.sendFile(m.chat, i.url, 'igstory.mp4', wm, m)
 conn.sendFile(m.chat, i.url, '', '', m)
 }}});
   
-let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
+let info = `👻 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n👻 *Find out about what's new and remember to have the latest version.*
   `.trim()  
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙈𝙚𝙣𝙪 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨 🌀', '#descargasmenu'],
@@ -24,6 +23,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['igstory <username>']
 handler.tags = ['downloader']
 handler.command = ['igstory', 'ighistoria', 'ighistorias' ]
-handler.limit = 7
+handler.limit = 3
 handler.exp = 87
 export default handler

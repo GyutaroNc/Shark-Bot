@@ -10,31 +10,31 @@ let res2 = await fetch(`https://myanimelist.net/anime/${mal_id}`)
 if (!res2.ok) throw await res2.text()
 let html = await res2.text()
 let animeingfo = 
-`𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀 
+`𝙏𝙄𝙏𝙐𝙇𝙊
 ❣ ${title}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙀𝙋𝙄𝙎𝙊𝘿𝙄𝙊𝙎 | 𝙀𝙋𝙄𝙎𝙊𝘿𝙀𝙎
+𝙀𝙋𝙄𝙎𝙊𝘿𝙄𝙊𝙎
 ❣ ${episodes}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙏𝙍𝘼𝙉𝙎𝙈𝙄𝙏𝙄𝘿𝙊 𝙋𝙊𝙍 | 𝙏𝙍𝘼𝙉𝙎𝙈𝙄𝙏𝙏𝙀𝘿 𝘽𝙔
+𝙏𝙍𝘼𝙉𝙎𝙈𝙄𝙏𝙄𝘿𝙊 𝙋𝙊𝙍
 ❣ ${type}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝘾𝙇𝘼𝙎𝙄𝙁𝙄𝘾𝘼𝘾𝙄𝙊𝙉 | 𝙍𝘼𝙏𝙄𝙉𝙂
+𝘾𝙇𝘼𝙎𝙄𝙁𝙄𝘾𝘼𝘾𝙄𝙊𝙉
 ❣ ${rated}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙋𝙐𝙉𝙏𝘼𝙅𝙀 | 𝙎𝘾𝙊𝙍𝙀
+𝙋𝙐𝙉𝙏𝘼𝙅𝙀
 ❣ ${score}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙈𝙄𝙀𝙈𝘽𝙍𝙊𝙎 | 𝙈𝙀𝙈𝘽𝙀𝙍𝙎
+𝙈𝙄𝙀𝙈𝘽𝙍𝙊𝙎
 ❣ ${members}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 𝙎𝙄𝙉𝙊𝙋𝙎𝙄𝙎 𝙀𝙉𝙂𝙇𝙄𝙎𝙃
 ❣ ${synopsis}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙀𝙉𝙇𝘼𝘾𝙀 | 𝙐𝙍𝙇
+𝙀𝙉𝙇𝘼𝘾𝙀
 ❣ ${url}`
 await conn.sendFile(m.chat, image_url, '', animeingfo, m) 
-let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
+let info = `👻 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n👻 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
@@ -48,4 +48,5 @@ handler.help = ['animeinfo <anime>']
 handler.tags = ['internet']
 handler.command = /^(animeinfo)$/i
 handler.exp = 50
+handler.level = 4
 export default handler

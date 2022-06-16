@@ -62,10 +62,12 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
 let mentionedJid = [who]
 let username = conn.getName(who)
 let pp = './media/menus/Menuvid3.mp4'
+let user = global.db.data.users[m.sender]
+user.registered = false
   
  let str = `
 ╭━━〔 🦈⚡️🦈⚡️🦈⚡️🦈 〙━━⬣   
-┃ 👻 ¡Hola! ${username} 👻
+┃ 🎤 ¡Hola! ${username} 🎤
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ *𝙈𝙀𝙉𝙐 𝘿𝙀 𝘼𝙐𝘿𝙄𝙊𝙎*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -210,11 +212,11 @@ await conn.sendHydrated(m.chat, str, wm, pp, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶�
 
 const sections = [
 {
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
+title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀`,
 rows: [
-{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 |  𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙 ❇️", description: null, rowId: `${usedPrefix}menu`},
-{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
-{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅", description: null, rowId: `${usedPrefix}cuentassk`},  
+{title: "❇️ 𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ❇️", description: null, rowId: `${usedPrefix}menu`},
+{title: "✳️ 𝙈𝙚𝙣𝙪 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙤 ✳️", description: null, rowId: `${usedPrefix}allmenu`},
+{title: "✅ 𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅", description: null, rowId: `${usedPrefix}cuentask`},  
   
 {title: "➥🔊 Noche de paz", description: null, rowId: `Noche de paz`},
 {title: "➥🔊 Buenos dias", description: null, rowId: `Buenos dias`},
@@ -373,6 +375,7 @@ handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio)$/i
 handler.exp = 60
+handler.register = true
 export default handler
 
 const more = String.fromCharCode(8206)

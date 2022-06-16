@@ -13,17 +13,17 @@ if (!json.thumbnail.genius) throw json
 
 
 let letratexto =`
-𝙏𝙄𝙏𝙐𝙇𝙊 | 𝙏𝙄𝙏𝙇𝙀 
+𝙏𝙄𝙏𝙐𝙇𝙊
 💚 *${result.title}*
 
-𝘼𝙐𝙏𝙊𝙍(𝘼) | 𝘼𝙐𝙏𝙃𝙊𝙍
+𝘼𝙐𝙏𝙊𝙍(𝘼)
 💜 *${result.author}*
 
 
 ${result.lyrics}
 
 
-𝙀𝙉𝙇𝘼𝘾𝙀 | 𝙐𝙍𝙇
+𝙀𝙉𝙇𝘼𝘾𝙀
 🧡 *${result.link}*
 `.trim()
 conn.sendHydrated(m.chat, letratexto, wm, json.thumbnail.genius, null, null, null, null, [
@@ -35,6 +35,7 @@ conn.sendHydrated(m.chat, letratexto, wm, json.thumbnail.genius, null, null, nul
 handler.help = ['lirik','letra'].map(v => v + ' <Apa>')
 handler.tags = ['internet']
 handler.command = /^(lirik|lyrics|lyric|letra)$/i
-handler.limit = 2
+handler.limit = 1
+handler.level = 3
 handler.exp = 55
-export default handler
+export default handler 

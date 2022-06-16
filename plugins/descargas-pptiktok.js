@@ -4,7 +4,7 @@ if (!text) throw `${mg}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽�
 let res = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=9b817532fadff8fc7cb86862`
 await conn.sendFile(m.chat, res, 'error.jpg', `✅ 𝙁𝙊𝙏𝙊 𝘿𝙀 𝙋𝙀𝙍𝙁𝙄𝙇 | 𝙋𝙍𝙊𝙁𝙄𝙇𝙀 𝙋𝙄𝘾𝙏𝙐𝙍𝙀\n💟 *${text}*`, m, false)
   
-  let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
+  let info = `👻 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n👻 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 conn.sendHydrated(m.chat, info, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
@@ -17,6 +17,6 @@ conn.sendHydrated(m.chat, info, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻
 handler.help = ['tiktokfoto'].map(v => v + ' <username>')
 handler.tags = ['downloader']
 handler.command = /^(tiktokfoto|tiktokphoto)$/i
-handler.limit = 4
+handler.limit = 1
 handler.exp = 68
 export default handler

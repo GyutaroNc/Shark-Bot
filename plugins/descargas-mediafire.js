@@ -9,13 +9,13 @@ let caption = `
 ${eg}
 ┃ 🦈 *${sk} ${vs}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💫 𝙉𝙊𝙈𝘽𝙍𝙀 | 𝙉𝘼𝙈𝙀
+┃ 💫 𝙉𝙊𝙈𝘽𝙍𝙀
 ┃ ${filename}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💪 𝙋𝙀𝙎𝙊 |  𝙎𝙄𝙕𝙀
+┃ 💪 𝙋𝙀𝙎𝙊
 ┃ ${filesizeH}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 🚀 𝙏𝙄𝙋𝙊 | 𝙏𝙔𝙋𝙀
+┃ 🚀 𝙏𝙄𝙋𝙊
 ┃ ${ext}`.trim()
 conn.reply(m.chat, caption, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
@@ -42,6 +42,6 @@ console.log(e)
 handler.help = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire|mediafiredl|dlmediafire)$/i
-handler.limit = 8
+handler.limit = 3
 handler.exp = 100
 export default handler

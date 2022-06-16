@@ -14,7 +14,7 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 //let json = await res.json()
 //conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, { mimetype: 'mp3/mp4' })}
 
-conn.reply(m.chat, `${eg}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 🦈\n𝙎𝙊𝙊𝙉 𝙒𝙄𝙇𝙇 𝙃𝘼𝙑𝙀 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊 🥳`, m, {
+conn.reply(m.chat, `${eg}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 👻\n𝙎𝙊𝙊𝙉 𝙒𝙄𝙇𝙇 𝙃𝘼𝙑𝙀 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊 🦈`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈',
 body: 'Super Bot WhatsApp',         
@@ -25,7 +25,7 @@ let res = await fetch("https://api.dhamzxploit.my.id/api/tiktod/?url="+args[0])
 let json = await res.json()
 await conn.sendFile(m.chat, json.result.nowatermark, 'error.mp4', `${wm}`, m)
 
-let info = `🦈 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n🦈 *Find out about what's new and remember to have the latest version.*
+let info = `👻 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n👻 *Find out about what's new and remember to have the latest version.*
   `.trim()
   
 await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
@@ -38,5 +38,6 @@ await conn.sendHydrated(m.chat, info, wm, null, ig, '𝙄𝙣𝙨𝙩𝙖𝙜�
 handler.help = ['tiktok'].map(v => v + ' <link>')
 handler.tags = ['downloader']
 handler.command = ['tiktok']
+handler.limit = 2
 handler.exp = 60
 export default handler
