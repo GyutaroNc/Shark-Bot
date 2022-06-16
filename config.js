@@ -91,9 +91,9 @@ global.ig = 'https://www.instagram.com/jm_hefesto'
 global.sharkig = ig
 
 global.md = 'https://github.com/GyutaroNc/Shark-Bot'
-global.shark = md
+global.shark= md
 
-global.nn = 'https://chat.whatsapp.com/INEgu0k1WsLKnUlzHQXija'
+global.nn = 'https://chat.whatsapp.com/Hahc7UwSouH9jIDStkT5QW'
 global.nngrupo = nn
 
 global.paypal = 'https://paypal.me/Chemita81'
@@ -136,7 +136,7 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-global.multiplier = 200 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
+global.multiplier = 2000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
