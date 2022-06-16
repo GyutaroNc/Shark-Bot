@@ -65,22 +65,22 @@ let pp = './media/menus/Menuvid1.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-//let user = global.db.data.users[m.sender]
-//user.registered = false
+let user = global.db.data.users[m.sender]
+user.registered = false
 
 let menu = `
-💗 *¡HOLA | HI!* ${username}
+🦈 *¡HOLA!* ${username}
 ╭━━〔 *${wm}* 〕━━⬣
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
+┃👻💸👻💸👻💸👻💸👻
 ┃✪ *EXPERIENCIA | EXP ➺ ${exp}*
 ┃✪ *NIVEL | LEVEL ➺ ${level}*
 ┃✪ *ROL ➺* ${role}
-┃✪ *GATACOINS ➺ $ ${money}*
+┃✪ *SHARKCOINS ➺ $ ${money}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *FECHA ➺ ${week}, ${date}*
 ┃✪ *USUARIOS | USERS ➺ ${Object.keys(global.db.data.users).length}* 
-┃🎠🎠🎠🎠🎠🎠🎠🎠🎠
-╰━━━━━━〔 𓃠 *${vs}* 〕━━━━━━⬣
+┃👻💸👻💸👻💸👻💸👻
+╰━━━━━━〔 🦈 *${vs}* 〕━━━━━━⬣
 
 ╭━〔 𝙅𝙐𝙀𝙂𝙊𝙎 𝘿𝙄𝙉𝘼𝙈𝙄𝘾𝙊𝙎 | 𝙂𝘼𝙈𝙀𝙎 〕⬣
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
@@ -113,7 +113,7 @@ let menu = `
 ┃🎡➺ _${usedPrefix}multijuegos_
 ┃🎡➺ _${usedPrefix}juegos_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
@@ -124,7 +124,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GataNina-Li/GataBot-
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(juegosmenu)$/i
-//handler.register = true
+handler.register = true
 handler.exp = 50
 export default handler
 
