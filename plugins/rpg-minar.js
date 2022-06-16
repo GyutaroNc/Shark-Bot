@@ -1,10 +1,18 @@
-let handler = async (m, { conn, isPrems}) => {
-let hasil = Math.floor(Math.random() * 1000)
-let time = global.db.data.users[m.sender].lastmiming + 600000
-if (new Date - global.db.data.users[m.sender].lastmiming < 600000) throw `⏲️ _𝙴𝚜𝚙𝚎𝚛𝚊_ ${msToTime(time - new Date())} _𝚙𝚊𝚛𝚊 𝚟𝚘𝚕𝚟𝚎𝚛 𝚊 𝚖𝚒𝚗𝚊𝚛_`  
-m.reply(`🎉 𝙶𝚎𝚗𝚒𝚊𝚕! 𝚖𝚒𝚗𝚊𝚜𝚝𝚎 *${hasil} 𝚇𝙿*`)
-global.db.data.users[m.sender].lastmiming = new Date * 1
-  
+//import { performance } from 'perf_hooks'
+let handler = async (m, { conn, isPrems}) => { //lastmiming
+let minar = `${pickRandom(['Que pro 😎 has minado','🌟✨ Genial!! Obtienes','WOW!! eres un(a) gran Minero(a) ⛏️ Obtienes','Felicidades!! Ahora tienes','⛏️⛏️⛏️ Obtienes'])}`
+let pp = 'https://img.freepik.com/vector-gratis/mineria-oro-isometrica-composiciones-cuadradas-mias-barras-trabajadores-lavado-oro_1284-54958.jpg?w=2000'
+
+let hasil = Math.floor(Math.random() * 2000)
+let time = global.db.data.users[m.sender].exp + 600000
+if (new Date - global.db.data.users[m.sender].exp < 600000) throw `*💟 Vuelva en ${msToTime(time - new Date())} para continuar minando ⛏️*`  
+
+conn.sendHydrated(m.chat, `*${minar} ${hasil} 𝙓𝙋*`, wm, pp, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `menu`]
+], m,)
+global.db.data.users[m.sender].exp = new Date * 1  
+//m.reply(`*${minar} *${hasil} 𝙓𝙋*`)
+
 }
 handler.help = ['minar']
 handler.tags = ['xp']
@@ -24,4 +32,8 @@ minutes = (minutes < 10) ? "0" + minutes : minutes
 seconds = (seconds < 10) ? "0" + seconds : seconds
 
 return minutes + " m y " + seconds + " s " 
-}
+}  
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
+
