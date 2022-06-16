@@ -200,7 +200,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃➫🔊 _En caso de una investigación_
 ┃➫🔊 _Buen día grupo | 🙌_
 ┃➫🔊 _Las reglas del grupo_
-╰━━━━━━〔 *𓃠 ${vs}* 〕━━━━━━⬣
+╰━━━━━━〔 *🦈 ${vs}* 〕━━━━━━⬣
 `.trim()
 await conn.sendHydrated(m.chat, str, wm, pp, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
