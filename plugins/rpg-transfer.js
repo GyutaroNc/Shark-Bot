@@ -1,14 +1,14 @@
 const items = [
     'limit', 'exp',
 ]
-let confirmation = {}
+let confirmation = {} 
 async function handler(m, { conn, args, usedPrefix, command }) {
     if (confirmation[m.sender]) return m.reply('estas haciendo una transferencia')
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
     let lol = `✳️ Uso del comamdo 
 *${usedPrefix + command}*  [tipo] [cantidad] [@user]
-📌 Ejemplo : ${usedPrefix + command} exp 65 @50582783643**
+📌 Ejemplo : ${usedPrefix + command} exp 99 @505827836**
 
 
 📍 Artículos transferibles
