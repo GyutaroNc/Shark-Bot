@@ -59,8 +59,8 @@ level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, r
 readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let user = global.db.data.users[m.sender]
-user.registered = false
+//let user = global.db.data.users[m.sender]
+//user.registered = false
     
 
 let str = `
@@ -425,8 +425,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° 👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['💸 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
-['⚠️ 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 ⚠️', null],
+['💸 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚 💸', '.donar'],
+['⚠️ 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 ⚠️', null],
 ['🎤 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 🎤', '.audios']
 
 ], m,)
@@ -440,7 +440,7 @@ throw e
 handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
 handler.command = /^(menucompleto|allmenu|allm\?)$/i
-handler.register = true
+//handler.register = true
 handler.exp = 50
 handler.fail = null
 export default handler

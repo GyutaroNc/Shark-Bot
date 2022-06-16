@@ -65,8 +65,8 @@ let pp = './media/menus/Menuvid3.mp4'
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 let mentionedJid = [who]
 let username = conn.getName(who)
-let user = global.db.data.users[m.sender]
-user.registered = false
+//let user = global.db.data.users[m.sender]
+//user.registered = false
 
 let menu = `
 ╭━━━〔 𝙍𝘼𝙉𝙂𝙊𝙎 | 𝙍𝙊𝙇 〕━━━⬣
@@ -92,9 +92,9 @@ ${role}
 *SUPER PRO I* 🎩
 *SUPER PRO II* 🎩
 *SUPER PRO III* 🎩
-*PRO EN GATABOT I* 😼
-*PRO EN GATABOT II* 😼
-*PRO EN GATABOT III* 😼
+*PRO EN SHARKBOT I* 🦈
+*PRO EN SHARKBOT II* 🦈
+*PRO EN SGARKBOT III* 🦈
 *DIAMANTE I* 💎
 *DIAMANTE II* 💎
 *DIAMANTE III* 💎
@@ -131,7 +131,7 @@ conn.sendHydrated(m.chat, menu, `𝙍𝘼𝙉𝙂𝙊𝙎 | ${wm}`, pp, 'https:/
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^(rol|rango|roles|rangos)$/i
-handler.register = true
+//handler.register = true
 handler.exp = 50
 export default handler
 
