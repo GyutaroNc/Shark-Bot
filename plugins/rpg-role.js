@@ -26,9 +26,9 @@ handler.before = function (m, text) {
                                                                                         : ((user.level >= 63) && (user.level <= 66)) ? '*DIAMANTE III* 💎'
                                                                                             : ((user.level >= 66) && (user.level <= 69)) ? '*DIAMANTE II* 💎'
                                                                                                 : ((user.level >= 69) && (user.level <= 71)) ? '*DIAMANTE I* 💎'
-                                                                                                    : ((user.level >= 71) && (user.level <= 74)) ? '*PRO EN GATABOT III* 😼'
-                                                                                                        : ((user.level >= 74) && (user.level <= 77)) ? '*PRO EN GATABOT II* 😼'
-                                                                                                            : ((user.level >= 77) && (user.level <= 80)) ? '*PRO EN GATABOT I* 😼'
+                                                                                                    : ((user.level >= 71) && (user.level <= 74)) ? '*PRO EN SHARKBOT III* 😼'
+                                                                                                        : ((user.level >= 74) && (user.level <= 77)) ? '*PRO EN SHARKBOT II* 😼'
+                                                                                                            : ((user.level >= 77) && (user.level <= 80)) ? '*PRO EN SHARKBOT I* 😼'
                                                                                                                 : ((user.level >= 80) && (user.level <= 83)) ? '*SUPER PRO III* 🎩'
                                                                                                                     : ((user.level >= 83) && (user.level <= 86)) ? '*SUPER PRO II* 🎩'
                                                                                                                         : ((user.level >= 86) && (user.level <= 89)) ? '*SUPER PRO I* 🎩'
@@ -45,7 +45,7 @@ handler.before = function (m, text) {
                                                                                                                                                                 : ((user.level >= 185) && (user.level <= 200)) ? '*TOP ASTRAL III* ⚜️🔱'
                                                                                                                                                                     : ((user.level >= 200) && (user.level <= 700)) ? '*TOP ASTRAL III* ⚜️🔱'
                                                                                                                                                                             : ((user.level >= 700) && (user.level <= 1000)) ? '👑 *ÉLITE GLOBAL* 🏁'
-                                                                                                                                                                                : 'Star king dragon'
+                                                                                                                                                                                : '👑 *∞ ÉLITE GLOBAL* 💎🏁'
 
 
     user.role = role

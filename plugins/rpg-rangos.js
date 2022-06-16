@@ -76,6 +76,7 @@ ${username}
 𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
 ${role}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👑 *∞ ÉLITE GLOBAL* 💎🏁
 👑 *ÉLITE GLOBAL* 🏁
 *TOP ASTRAL I* ⚜️🔱
 *TOP ASTRAL II* ⚜️🔱
@@ -92,9 +93,9 @@ ${role}
 *SUPER PRO I* 🎩
 *SUPER PRO II* 🎩
 *SUPER PRO III* 🎩
-*PRO EN SHARKBOT I* 🦈
-*PRO EN SHARKBOT II* 🦈
-*PRO EN SGARKBOT III* 🦈
+*PRO EN SHARKBOT I* 😼
+*PRO EN SHARKBOT II* 😼
+*PRO EN SHARKBOT III* 😼
 *DIAMANTE I* 💎
 *DIAMANTE II* 💎
 *DIAMANTE III* 💎
