@@ -34,10 +34,10 @@ ${listAdmin}
 𝘼𝙐𝙏𝙊𝙎𝙏𝙄𝘾𝙆𝙀𝙍 ${autosticker ? '✅' : '❌'} 
 𝘼𝙐𝘿𝙄𝙊𝙎 ${audios ? '✅' : '❌'} 
 
-╰━━━━━━❰ *𓃠 ${vs}* ❱━━━━━⬣
+╰━━━━━━❰ *🦈 ${vs}* ❱━━━━━⬣
 `.trim()
 //conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
-conn.sendHydrated(m.chat, text, wm, pp, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, text, wm, pp, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }

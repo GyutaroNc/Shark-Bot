@@ -14,10 +14,10 @@ teks += `┃➥ @${username.id.split('@')[0]}\n`}
 teks += `╰━━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
   
-conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, null, 'https://github.com/GataNina-Li/GataBot-MD', '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, teks, `𝙀𝙩𝙞𝙦𝙪𝙚𝙩𝙖𝙨 | ${wm}`, null, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙄𝙣𝙫𝙤𝙘𝙖𝙧 𝙤𝙩𝙧𝙖 𝙫𝙚𝙯 📣', `${usedPrefix + command}`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘', '.menu']
-], m, { mentions: participants.map(a => a.id) })  
+], m, { mentions: participants.map(a => a.id) }) 
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']

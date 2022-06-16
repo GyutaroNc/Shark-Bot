@@ -21,11 +21,11 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-conn.sendHydrated(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😿\n\n𝙏𝙃𝙀 𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝙉𝙊𝙏 𝘼𝘿𝙈𝙄𝙉 😧`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😪\n\n𝙏𝙃𝙀 𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝙉𝙊𝙏 𝘼𝘿𝙈𝙄𝙉 😧`, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
 ], m)
 }}
-handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'demote ' + v) 
+handler.help = ['*505xxx*','*@usuario*','*responder chat*'].map(v => 'demote ' + v) 
 handler.tags = ['group']
 handler.command = /^(demote|quitarpoder|quitaradmin)$/i
 handler.group = true

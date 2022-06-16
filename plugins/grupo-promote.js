@@ -21,13 +21,13 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-//conn.reply(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😼\n\n𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝘼𝘿𝙈𝙄𝙉 🤠`, m)
+//conn.reply(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😎\n\n𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝘼𝘿𝙈𝙄𝙉 🤠`, m)
 	
-conn.sendHydrated(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😼\n\n𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝘼𝘿𝙈𝙄𝙉 🤠`, wm, null, md, '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿', null, null, [
+conn.sendHydrated(m.chat, `${eg}𝘼𝙃𝙊𝙍𝘼 𝙏𝙄𝙀𝙉𝙀 𝙀𝙇 𝙋𝙊𝘿𝙀𝙍 𝘿𝙀𝙇 𝘼𝘿𝙈𝙄𝙉 😎\n\n𝙐𝙎𝙀𝙍 𝙄𝙎 𝙉𝙊𝙒 𝘼𝘿𝙈𝙄𝙉 🤠`, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu'] 
 ], m)
 }}
-handler.help = ['*593xxx*','*@usuario*','*responder chat*'].map(v => 'promote ' + v)
+handler.help = ['*505xxx*','*@usuario*','*responder chat*'].map(v => 'promote ' + v)
 handler.tags = ['group']
 handler.command = /^(promote|daradmin|darpoder)$/i
 handler.group = true
