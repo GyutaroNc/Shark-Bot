@@ -10,7 +10,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     let shark = `
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
 ┃ *Compra Efectuada* : +${count} 💎 
-┃ *Ha Gastado* :  -${xpperlimit * count} 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎
+┃ *Ha Gastado* :  -${xpperlimit * count} 𝑺𝑯𝑨𝑹𝑲𝘾𝙊𝙄𝙉𝙎
 ╰━━━━━〔 *🦈 ${vs}* 〕━━━━⬣`.trim()
     
 await conn.sendHydrated(m.chat, shark, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
