@@ -73,7 +73,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > cd 
 > cd Shark-Bot
-> rm -rf session.data.json
+> rm -rf shark.data.json
 > npm start
 ```
 ----
