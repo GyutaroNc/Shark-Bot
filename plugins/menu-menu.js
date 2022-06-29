@@ -76,7 +76,6 @@ let str = `
 ° 💟 _${usedPrefix}cuentask_
 ° 💟 _${usedPrefix}estado_
 ° 💟 _${usedPrefix}infobot_
-° 💟 _${usedPrefix}donar_
 ° 💟 _${usedPrefix}listagrupos_
 ° 💟 _${usedPrefix}velocidad_
 ° 💟 _${usedPrefix}owner_
@@ -148,7 +147,7 @@ let str = `
 ° 📥 _${usedPrefix}play *<texto>*_
 ° 📥 _${usedPrefix}spotify *<texto>*_
 ° 📥 _${usedPrefix}imagen *<texto>*_
-° 📥 _${usedPrefix}pinteret *<texto>*_
+° 📥 _${usedPrefix}pinterest *<texto>*_
 ° 📥 _${usedPrefix}wallpaper *<texto>*_
 ° 📥 _${usedPrefix}wallpaper2 *<texto>*_
 ° 📥 _${usedPrefix}pptiktok *<nombre de usuario>*_
@@ -204,12 +203,9 @@ let str = `
 ° 👾 _${usedPrefix}itzy_
 ° 👾 _${usedPrefix}blackpink_
 ° 👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
-° 👾 _${usedPrefix}lolivid_
-° 👾 _${usedPrefix}loli_
 ° 👾 _${usedPrefix}navidad_
 ° 👾 _${usedPrefix}ppcouple_
 ° 👾 _${usedPrefix}neko_
-° 👾 _${usedPrefix}waifu_
 ° 👾 _${usedPrefix}akira_
 ° 👾 _${usedPrefix}akiyama_
 ° 👾 _${usedPrefix}anna_
@@ -244,41 +240,6 @@ let str = `
 ° 👾 _${usedPrefix}sagiri_
 ° 👾 _${usedPrefix}sasuke_
 ° 👾 _${usedPrefix}sakura_
-° 👾 _${usedPrefix}cosplay_
-
-*<ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠/>*
-
-° 🔞 _${usedPrefix}pack_
-° 🔞 _${usedPrefix}pack2_
-° 🔞 _${usedPrefix}pack3_
-° 🔞 _${usedPrefix}videoxxx_
-° 🔞 _${usedPrefix}tetas_
-° 🔞 _${usedPrefix}booty_
-° 🔞 _${usedPrefix}ecchi_
-° 🔞 _${usedPrefix}furro_
-° 🔞 _${usedPrefix}imagenlesbians_
-° 🔞 _${usedPrefix}panties_
-° 🔞 _${usedPrefix}pene_
-° 🔞 _${usedPrefix}porno_
-° 🔞 _${usedPrefix}porno2_
-° 🔞 _${usedPrefix}randomxxx_
-° 🔞 _${usedPrefix}pechos_
-° 🔞 _${usedPrefix}yaoi_
-° 🔞 _${usedPrefix}yaoi2_
-° 🔞 _${usedPrefix}yuri_
-° 🔞 _${usedPrefix}yuri2_
-° 🔞 _${usedPrefix}trapito_
-° 🔞 _${usedPrefix}hentai_
-° 🔞 _${usedPrefix}pies_
-° 🔞 _${usedPrefix}nsfwloli_
-° 🔞 _${usedPrefix}nsfworgy_
-° 🔞 _${usedPrefix}nsfwfoot_
-° 🔞 _${usedPrefix}nsfwass_
-° 🔞 _${usedPrefix}nsfwbdsm_
-° 🔞 _${usedPrefix}nsfwcum_
-° 🔞 _${usedPrefix}nsfwero_
-° 🔞 _${usedPrefix}nsfwfemdom_
-° 🔞 _${usedPrefix}nsfwglass_
 
 *<𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊/>*
 *- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
