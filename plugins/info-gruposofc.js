@@ -1,4 +1,4 @@
-let media = './media/menus/Menuvid3.mp4'
+let media = './media/menus/Menu3.jpg'
 let handler = async (m, { conn, command }) => {
 let str = `
 👻 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊 𝘼 𝙇𝙊𝙎 𝙂𝙍𝙐𝙋𝙊𝙎 𝙊𝙁𝙄𝘾𝙄𝘼𝙇𝙀𝙎
