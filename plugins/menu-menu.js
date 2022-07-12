@@ -39,6 +39,8 @@ process.once('message', resolve)
 setTimeout(resolve, 1000)
 }) * 1000
 }
+let { money } = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 let muptime = clockString(_muptime)
 let uptime = clockString(_uptime)
 let totalreg = Object.keys(global.db.data.users).length
@@ -61,55 +63,88 @@ readmore: readMore
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 //let user = global.db.data.users[m.sender]
 //user.registered = false
-    
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let mentionedJid = [who]
+let username = conn.getName(who) 
 
-let str = `
-*ミ🦈 𝙷𝙾𝙻𝙰 ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 🦈彡*
 
-*📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
+let str = 
+`*╭━━━〔 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 〕━━━⬣*
+*┆⦒ 🦈 𝙑𝙀𝙍𝙎𝙄𝙊𝙉 » ${vs}*
+*┆⦒ 𝙁𝙀𝘾𝙃𝘼 » ${week}, ${date}*
+*┆⦒ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 » ${uptime}*
+*┆⦒ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 » ${Object.keys(global.db.data.users).length}*
+*╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧* 
 
-*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
+*╭━〔* ${username} *〕━━⬣*
+*┆🧰 EXPERIENCIA ➟ ${exp}*
+*┆🎖️ NIVEL ➟ ${level} || ${user.exp - min}/${xp}*
+*┆⚓ RANGO ➟* ${role}
+*┆💎 DIAMANTES ➟ ${limit}*
+*┆🦈 SHARKCOINS ➟ ${money}*
+*┆🎟️ PREMIUM ➟* ${global.prem ? '✅' : '❌'}
+*╰*┅┅┅┅┅┅┅┅┅┅┅┅┅ *✧*
 
-*<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
+*╭━〔 INFORMACIÓN DE SHARK-BOT 〕━⬣*
+┃💫➺ _${usedPrefix}cuentasdeshark | cuentask_
+┃💫➺ _${usedPrefix}grupossharkbot | grupos | grupobt_
+┃💫➺ _${usedPrefix}donar | donate_
+┃💫➺ _${usedPrefix}listagrupos | grouplist_
+┃💫➺ _${usedPrefix}estado | botstat | status_
+┃💫➺ _${usedPrefix}infoshark | infobot_
+┃💫➺ _${usedPrefix}creador | owner_
+┃💫➺ _${usedPrefix}velocidad | ping_
+┃💫➺ _Bot_ 
+┃💫➺ _términos y condiciones_
+*╰━━━━━━━━━━━━⬣*
 
-° 💟 _${usedPrefix}grupos_
-° 💟 _${usedPrefix}cuentask_
-° 💟 _${usedPrefix}estado_
-° 💟 _${usedPrefix}infobot_
-° 💟 _${usedPrefix}listagrupos_
-° 💟 _${usedPrefix}velocidad_
-° 💟 _${usedPrefix}owner_
-° 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+*╭━〔 ÚNETE AL GRUPO 〕━⬣*
+┃ *Une a Shark-Bot en Grupos!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪅 _${usedPrefix}join *enlace*_
+┃🪅 _${usedPrefix}unete *enlace*_
+*╰━━━━━━━━━━━━⬣*
 
-*<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
+*<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
-° 👽 _${usedPrefix}join *<enlace / link / url>*_
+° 🔰 _${usedPrefix}reporte *<texto>*_
 
-*<𝕁𝕌𝔼𝔾𝕆𝕊/>*
+*╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
+┃🎡➺ _${usedPrefix}mates | matemáticas | math_
+┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
+┃🎡➺ _${usedPrefix}topgays_
+┃🎡➺ _${usedPrefix}topotakus_
+┃🎡➺ _${usedPrefix}gay | gay *@tag*_
+┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
+┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
+┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
+┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
+┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
+┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
+┃🎡➺ _${usedPrefix}love *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
+┃🎡➺ _${usedPrefix}doxxeame_
+┃🎡➺ _${usedPrefix}pregunta *texto*_
+┃🎡➺ _${usedPrefix}slot *apuesta*_
+┃🎡➺ _${usedPrefix}formarpareja_
+┃🎡➺ _${usedPrefix}dado_
+┃🎡➺ _${usedPrefix}verdad_
+┃🎡➺ _${usedPrefix}reto_
+┃🎡➺ _${usedPrefix}multijuegos_
+┃🎡➺ _${usedPrefix}juegos_
+*╰━━━━━━━━━━━━⬣*
 
-° 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-° 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-° 🎖️ _${usedPrefix}prostituto *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}prostituta *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}gay2 *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}lesbiana *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}pajero *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}pajera *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}puto *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}puta *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}manco *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}manca *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}rata *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}love *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}doxear *<nombre / @tag>*_
-° 🎖️ _${usedPrefix}pregunta *<texto>*_
-° 🎖️ _${usedPrefix}slot *<apuesta>*_
-° 🎖️ _${usedPrefix}simi *<texto>*_
-° 🎖️ _${usedPrefix}topgays_
-° 🎖️ _${usedPrefix}topotakus_
-° 🎖️ _${usedPrefix}formarpareja_
-° 🎖️ _${usedPrefix}verdad_
-° 🎖️ _${usedPrefix}reto_
+*╭━〔 IA 〕━⬣*
+┃ *Tienes la Ocasión de*
+┃ *Conversar con Shark-Bot!!*
+┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┃🪄➺ _${usedPrefix}simi | okgoogle *texto*_
+┃🪄➺ _${usedPrefix}alexa | siri | cortana *texto*_
+┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
+*╰━━━━━━━━━━━━⬣*
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
@@ -147,7 +182,7 @@ let str = `
 ° 📥 _${usedPrefix}play *<texto>*_
 ° 📥 _${usedPrefix}spotify *<texto>*_
 ° 📥 _${usedPrefix}imagen *<texto>*_
-° 📥 _${usedPrefix}pinterest *<texto>*_
+° 📥 _${usedPrefix}pinteret *<texto>*_
 ° 📥 _${usedPrefix}wallpaper *<texto>*_
 ° 📥 _${usedPrefix}wallpaper2 *<texto>*_
 ° 📥 _${usedPrefix}pptiktok *<nombre de usuario>*_
@@ -386,8 +421,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° 👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['💸 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚 💸', '.donar'],
-['⚠️ 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 ⚠️', null],
+['💸 𝘿𝙤𝙣𝙖𝙧 💸', '.donar'],
+['😛 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 | 𝙍𝙋𝙂 😛', '.rpgmenu'],
 ['🎤 𝙈𝙚𝙣𝙪 𝘼𝙪𝙙𝙞𝙤𝙨 🎤', '.audios']
 
 ], m,)
