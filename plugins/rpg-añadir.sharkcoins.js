@@ -19,7 +19,7 @@ users[who].money += sharkcoins
 //┌──────────────
 //▢  *𝚃𝚘𝚝𝚊𝚕:* ${xp}
 //└──────────────`)
-conn.sendHydrated(m.chat, `╭━━━[ 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 ]━━━⬣\n┃\n┃ღ *PARA | FOR:*\n┃ღ *${text}*\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ღ *SE LE AÑADIÓ | NOW YOU HAVE*\n┃ღ *${sharkcoins} SharkCoin(s)* 🐈\n┃\n╰━━━━━━━━━━━━━━⬣`, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
+conn.sendHydrated(m.chat, `╭━━━[ 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈 ]━━━⬣\n┃\n┃ღ *PARA | FOR:*\n┃ღ *${text}*\n┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n┃ღ *SE LE AÑADIÓ | NOW YOU HAVE*\n┃ღ *${sharkcoins} SharkCoin(s)* 🦈\n┃\n╰━━━━━━━━━━━━━━⬣`, wm, null, md, '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
 ['⚠️ 𝙈𝙚𝙣𝙪 𝘼𝙫𝙚𝙣𝙩𝙪𝙧𝙖 ⚠️', '.rpgmenu'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']], m)
 }
