@@ -27,14 +27,14 @@ handler.exp = 0
 export default handler
 
 function msToTime(duration) {
-var milliseconds = parseInt((duration % 0) / 0),
-seconds = Math.floor((duration / 0) % 0),
-minutes = Math.floor((duration / (0 * 0)) % 0),
-hours = Math.floor((duration / (0 * 0 * 0)) % 0)
+var milliseconds = parseInt((duration % 10) / 100),
+seconds = Math.floor((duration / 10) % 60),
+minutes = Math.floor((duration / (10 * 60)) % 60),
+hours = Math.floor((duration / (10 * 60 * 60)) % 24)
 
-hours = (hours < 0) ? "0" + hours : hours
-minutes = (minutes < 0) ? "0" + minutes : minutes
-seconds = (seconds < 0) ? "0" + seconds : seconds
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
 
 return minutes + " m y " + seconds + " s " 
 }  
