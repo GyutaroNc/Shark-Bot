@@ -5,7 +5,7 @@ conn.sendHydrated(m.chat, null, null, res, 'https://github.com/GyutaroNc/Shark-B
 handler.help = ['videoxxx']
 handler.tags = ['random']
 handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i 
-handler.level = 5
+handler.level = 0
 handler.limit = 4
 export default handler
 

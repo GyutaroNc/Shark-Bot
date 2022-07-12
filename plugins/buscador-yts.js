@@ -33,5 +33,5 @@ handler.tags = ['tools']
 handler.command = /^ytbuscar|yts(earch)?$/i
 handler.exp = 70
 handler.limit = 1
-handler.level = 4
+handler.level = 0
 export default handler

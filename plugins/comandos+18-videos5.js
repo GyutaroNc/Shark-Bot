@@ -6,7 +6,7 @@ handler.help = ['videoxxx']
 handler.tags = ['random']
 handler.command = /^(pornoaleatorio|pornopremium|pornoalevid|pornovidale|pornopremiumvid|pornopremiumv|Pornopremium|Pornopremiumvid)$/i
 //handler.premium = true
-handler.level = 10
+handler.level = 2
 handler.limit = 2
 export default handler
 

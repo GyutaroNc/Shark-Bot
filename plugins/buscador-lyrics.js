@@ -36,6 +36,6 @@ handler.help = ['lirik','letra'].map(v => v + ' <Apa>')
 handler.tags = ['internet']
 handler.command = /^(lirik|lyrics|lyric|letra)$/i
 handler.limit = 1
-handler.level = 3
+handler.level = 0
 handler.exp = 55
 export default handler 
