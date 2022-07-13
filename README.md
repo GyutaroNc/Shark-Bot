@@ -1,14 +1,9 @@
-> #### 🚀 Versión actual: 9.9.9
+### 🦈 CREADOR
+ 
+[![GyutaroNc](https://github.com/GyutaroNc.png?size=150)](https://github.com/GyutaroNc)
    
 -----
-[![blog](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtube.com/channel/UCgRkBSSvHQ1g4PP8R6r8v5g)  <img src="https://github.com/siegrin/siegrin/blob/main/Assets/powerup.gif" height="29px">
-
-<p align="hihg">   
-<a href="https://instagram.com/jm_hefesto" target="_blank"> <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> <img src="https://github.com/siegrin/siegrin/blob/main/Assets/Handshake.gif" height="30px">
-<a href="https://github.com/GyutaroNc"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=14&duration=3000&color=ABF7BB&center=verdadero&vCenter=verdadero&lines=Solo+escr%C3%ADba+si+tiene+dudas." height="40px"
-</p>
-
+> #### 🚀 Versión actual: 9.9.9
 -----
 
 ### 🟣 ACTIVAR EN HEROKU 
