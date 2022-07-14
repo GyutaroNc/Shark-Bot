@@ -106,12 +106,14 @@ let menu = `
 ┃🌐➺ _${usedPrefix}quitar | demote *@tag*_
 ┃🌐➺ _${usedPrefix}banchat_
 ┃🌐➺ _${usedPrefix}unbanchat_
+┃🌐➺ _${usedPrefix}banuser *@tag*_
+┃🌐➺ _${usedPrefix}unbanuser *@tag*_
 ┃🌐➺ _${usedPrefix}admins *texto*_
 ┃🌐➺ _${usedPrefix}invocar *texto*_
 ┃🌐➺ _${usedPrefix}tagall *texto*_
 ┃🌐➺ _${usedPrefix}hidetag *texto*_
 ┃🌐➺ _${usedPrefix}infogrupo | infogroup_
-┃🌐➺ _${usedPrefix}enlace | link *texto*_
+┃🌐➺ _${usedPrefix}enlace | link_
 ┃🌐➺ _${usedPrefix}newnombre | setname *texto*_
 ┃🌐➺ _${usedPrefix}newdesc | setdesc *texto*_
 ┃🌐➺ _${usedPrefix}setwelcome *texto*_
@@ -119,7 +121,7 @@ let menu = `
 ┃🌐➺ _${usedPrefix}on_
 ┃🌐➺ _${usedPrefix}off_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
+conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
