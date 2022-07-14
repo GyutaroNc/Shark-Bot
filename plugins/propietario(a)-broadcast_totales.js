@@ -4,7 +4,7 @@ let chatsall = Object.entries(conn.chats).filter(([_, chat]) => chat.isChats).ma
 for (let id of chatsall) { 
 conn.sendButton(id, `*╭━━[ 𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝘿𝙊 | 𝙉𝙊𝙏𝙄𝘾𝙀 ]━━━⬣*\n*┃*\n*┃💌* ${text}\n*┃*\n*╰━━━━━━━━━━━━━━━━━━⬣*`, '✅ *𝘾𝙊𝙈𝙐𝙉𝙄𝘾𝘼𝘿𝙊 𝙊𝙁𝙄𝘾𝙄𝘼𝙇*\n' + wm, fs.readFileSync('./src/avatar_contact.png'), [['🎁 𝙄𝙣𝙛𝙤 𝙊𝙛𝙞𝙘𝙞𝙖𝙡', '.cuentassk'],['🦈 𝙈𝙚𝙣𝙪', '.menu']], false, {
 contextInfo: { externalAdReply: {
-title: '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈',
+title: '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈',
 body: 'Super Bot WhatsApp', 
 sourceUrl: `https://www.instagram.com/jm_hefesto`, 
 thumbnail: fs.readFileSync('./media/menus/Menu3.jpg') }}})}

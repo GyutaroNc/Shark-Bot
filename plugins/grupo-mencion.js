@@ -14,7 +14,7 @@ teks += `┃➥ @${username.id.split('@')[0]}\n`}
 teks += `╰━━━━[ *🦈 ${vs}* ]━━━━⬣`
 //conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 let img = 'https://i.imgur.com/8fuQ7X5.jpeg'  
-conn.sendHydrated(m.chat, teks, `𝑰𝒏𝒇𝒍𝒖.𝒛𝒆𝒖𝒔 | ${wm}`, img, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
+conn.sendHydrated(m.chat, teks, `𝑰𝒏𝒇𝒍𝒖.𝒛𝒆𝒖𝒔 | ${wm}`, img, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['𝙄𝙣𝙫𝙤𝙘𝙖𝙧 𝙤𝙩𝙧𝙖 𝙫𝙚𝙯 📣', `${usedPrefix + command}`],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘', '.menu']
 ], m, { mentions: participants.map(a => a.id) })  
@@ -41,7 +41,7 @@ userJid: conn.user.id
 }),
 conn.reply(m.chat, `${text} Hola` || q.text, conn.user.jid, { mentions: users }), {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈',
+title: '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈',
 body: 'Super Bot WhatsApp',         
 previewType: 1, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `${yt}`}}})

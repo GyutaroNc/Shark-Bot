@@ -5,7 +5,7 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 //if (command == 'tiktokaudio') {
 //conn.reply(m.chat, `${eg}PRONTO TENDRA EL VIDEO DE TIKTOK 👻*`, m, {
 //contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-//title: '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈',
+//title: '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈',
 //body: 'Super Bot WhatsApp',         
 //previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 //sourceUrl: `https://github.com/GyutaroNc/Shark-Bot`}}})
@@ -16,7 +16,7 @@ if (!text) throw `${mg}𝘿𝙀𝘽𝙀 𝙄𝙉𝙂𝙍𝙀𝙎𝘼𝙍 𝙐�
 
 conn.reply(m.chat, `${eg}𝙋𝙍𝙊𝙉𝙏𝙊 𝙏𝙀𝙉𝘿𝙍𝘼 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝘿𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 👻\n𝙎𝙊𝙊𝙉 𝙒𝙄𝙇𝙇 𝙃𝘼𝙑𝙀 𝙏𝙃𝙀 𝙏𝙄𝙆𝙏𝙊𝙆 𝙑𝙄𝘿𝙀𝙊 🦈`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈',
+title: '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/GyutaroNc/Shark-Bot`}}})

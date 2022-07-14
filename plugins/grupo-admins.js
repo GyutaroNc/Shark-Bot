@@ -15,7 +15,7 @@ ${listAdmin}
 𝙐𝙎𝘼𝙍 𝙀𝙉 𝘾𝘼𝙎𝙊 𝘿𝙀 𝙀𝙈𝙀𝙍𝙂𝙀𝙉𝘾𝙄𝘼
 ╰━━━━━━[ *🦈 ${vs}* ]━━━━━⬣`.trim()
 
-conn.sendHydrated(m.chat, text, `𝘼𝙙𝙢𝙞𝙣𝙨 | ${wm}`, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈', null, null, [
+conn.sendHydrated(m.chat, text, `𝘼𝙙𝙢𝙞𝙣𝙨 | ${wm}`, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘', '.menu']
 ], m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 
