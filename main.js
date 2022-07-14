@@ -94,8 +94,8 @@ const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
+  //logger: pino({ level: 'trace' })
   browser: ['Shark-Bot','Edge','1.0.0']
-  // logger: pino({ level: 'trace' })
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -107,17 +107,20 @@ if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp'], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
 }, 30 * 1000)}
 
+    
 if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
+
 function clearTmp() {
-const tmp = [tmpdir(), join(__dirname, './tmp')]
-const filename = []
-tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
-return filename.map(file => {
-const stats = statSync(file)
-if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
-return false
-})}
+  const tmp = [tmpdir(), join(__dirname, './tmp')]
+  const filename = []
+  tmp.forEach(dirname => readdirSync(dirname).forEach(file => filename.push(join(dirname, file))))
+  return filename.map(file => {
+    const stats = statSync(file)
+    if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 3)) return unlinkSync(file) // 3 minutes
+    return false
+  })
+}
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -273,7 +276,7 @@ async function _quickTest() {
 
 setInterval(async () => {
 var a = await clearTmp()
-console.log(chalk.cyanBright(`\n▣────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]───────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣────────────────────────────────────···\n`))
+console.log(conn.logger.info(`\n▣────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁𝚃𝙼𝙿 ]───────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣────────────────────────────────────···\n`))
 }, 180000)
 
 _quickTest()
