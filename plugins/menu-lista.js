@@ -29,7 +29,7 @@ const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀`,
 rows: [
-      {title: "🦈 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 🦈", description: null, rowId: `${usedPrefix}creador`},
+      {title: "🦈 𝘾𝙍𝙀𝘼𝘿𝙊𝙍 🦈", description: null, rowId: `${usedPrefix}creador`},
       {title: "💸 𝘿𝙊𝙉𝘼𝙍 💸", description: null, rowId: `${usedPrefix}donar`},
       {title: "🚀 𝙑𝙀𝙇𝙊𝘾𝙄𝘿𝘼𝘿 | 𝙎𝙋𝙀𝙀𝘿 🚀", description: null, rowId: `${usedPrefix}ping`},
       {title: "🌀 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 🌀", description: null, rowId: `${usedPrefix}allmenu`},
