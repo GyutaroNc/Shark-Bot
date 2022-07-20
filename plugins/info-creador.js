@@ -34,7 +34,7 @@ await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
 let pp = './media/menus/Menu2.jpg'
 let str = `${wm}`
-let oficial = 'Comunícate con Mí Creador por Instagram!!, Solo por ese medio puede ayudarte sobre Temas del Shark-Bot'
+let oficial = 'Comunícate con El Chema Mi Creador por Instagram!!, Solo por ese medio puede ayudarte sobre Temas del Shark-Bot'
 
 await conn.sendHydrated2(m.chat, str, oficial, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', 'https://www.instagram.com/jm_hefesto', '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', [
 ['☘ 𝙄𝙧 𝙖𝙡 𝙞𝙣𝙞𝙘𝙞𝙤', '/menu'],

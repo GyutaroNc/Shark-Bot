@@ -4,7 +4,7 @@ const pp = await conn.profilePictureUrl(m.chat, 'image').catch(_ => null) || './
 //m.reply('https://chat.whatsapp.com/' + await conn.groupInviteCode(group))
   
 conn.sendHydrated(m.chat, ('https://chat.whatsapp.com/' + await conn.groupInviteCode(group)), wm, pp, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']], m)
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']], m)
 }
 handler.help = ['linkgroup']
 handler.tags = ['group']
