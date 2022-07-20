@@ -2,11 +2,11 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
-//⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰
+//⊱ ━━━━━.⋅ Añada los numeros para ser Propietario ⋅.━━━━ ⊰
 global.owner = [
-  ['50582783643', '𝑬𝑳 𝑪𝑯𝑬𝑴𝑨ㅤ👻', true],
+  ['50582783643', '𝐀𝐥𝐯𝐚𝐫𝐞𝐳 ✨', true],
+  ['50577156118', '𝐀𝐥𝐯𝐚𝐫𝐞𝐳 ✨ 𝐄𝐬𝐩𝐢𝐧𝐨𝐳𝐚', true],
   ['50576033859'],
-  ['50577156118'],
   ['50578213790']
 ]
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -81,7 +81,7 @@ global.author = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
 global.vs = '9.9.9'
 global.version = vs
 
-global.sk = '𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈'
+global.sk = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
 global.shark = sk
 
 global.yt = 'https://youtube.com/channel/UCgRkBSSvHQ1g4PP8R6r8v5g'
@@ -99,44 +99,46 @@ global.nngrupo = nn
 global.paypal = 'https://paypal.me/Chemita81'
 global.donar = paypal
 
+//global.gataimg = fs.readFileSync('./media/menus/Menu3.jpg')
+
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 //⊱ ━━━━━━━━━━━━━.⋅ Datos ⋅.━━━━━━━━━━━━━━ ⊰
-global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✅⊱╮\n\n'
+global.rg = '╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊*⊱ ✅⊱╮\n\n'
 global.resultado = rg
 
-global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼 | 𝙒𝘼𝙍𝙉𝙄𝙉𝙂* ⊱⚠️⊱╮\n\n'
+global.ag = '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱ ⚠️⊱╮\n\n'
 global.advertencia = ag
 
-global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉 | 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉* ⊱❕⊱╮\n\n'
+global.iig = '╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉* ⊱❕⊱╮\n\n'
 global.informacion = iig
 
-global.fg = '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n'
+global.fg = '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́* ⊱ ❌⊱╮\n\n'
 global.fallo = fg
 
-global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n'
+global.mg = '╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n'
 global.mal = mg
 
-global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀 | 𝙍𝙀𝙋𝙊𝙍𝙏* ⊱📩⊱╮\n\n'
+global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀* ⊱ 📩⊱╮\n\n'
 global.envio = eeg
 
-global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n'
+global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱ 💚⊱╮\n\n'
 global.exito = eg
 
-//𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
+//𝙀𝙅𝙀𝙈𝙋𝙇𝙊
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
 global.wm = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
-global.igfg = '𝑬𝑳 𝑪𝑯𝑬𝑴𝑨ㅤ👻'
+global.igfg = '𝐀𝐥𝐯𝐚𝐫𝐞𝐳 ✨'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-global.multiplier = 2000 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
+global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup 
 
 global.rpg = {
   emoticon(string) {
