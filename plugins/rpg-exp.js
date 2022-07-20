@@ -90,7 +90,7 @@ let menu = `╭━━〔 *${wm}* 〕━━⬣
 ┃ ✪ *FECHA*
 ┃ ➥ *${week}, ${date}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ ✪ *USUARIOS | USERS*
+┃ ✪ *USUARIOS*
 ┃ ➥ *${Object.keys(global.db.data.users).length}* 
 ╰━━━━━━〔 *🦈 ${vs}* 〕━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, wm, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [

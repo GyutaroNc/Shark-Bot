@@ -37,7 +37,7 @@ let user = global.db.data.users[m.sender]
 ┃ *FECHA:* *${new Date().toLocaleString('id-ID')}*
 ╰━━━〔 *🦈 ${vs}* 〕━━━━━⬣
 
-*_Cuanto más interactúes con 𝑺𝑯𝑨𝑹𝑲 𝑩𝑶𝑻ㅤ🦈, mayor será tu nivel!!_*
+*_Cuanto más interactúes con 𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈, mayor será tu nivel!!_*
 `.trim()
         try {
             const img = await levelup(teks, user.level)

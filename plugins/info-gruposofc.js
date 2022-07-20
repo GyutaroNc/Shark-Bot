@@ -13,14 +13,13 @@ let str = `
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🦈 *https://chat.whatsapp.com/INEgu0k1WsLKnUlzHQXija*\n
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-*Por favor, no ingresar con números de Bots, y mantener el respeto.*\n
-*Please, do not enter with Bot numbers, and maintain respect.*
+*Por favor, no ingresar con números de Bots, y mantener el respeto.*
 `.trim()
   
 conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝘼𝙘𝙘𝙤𝙪𝙣𝙩𝙨 ✅', '.cuentassk'],
-['🎁 𝘿𝙤𝙣𝙖𝙧 | 𝘿𝙤𝙣𝙖𝙩𝙚', '.donar'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
+['𝘾𝙪𝙚𝙣𝙩𝙖𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 ✅', '.cuentassk'],
+['🎁 𝘿𝙤𝙣𝙖𝙧', '.donar'],
+['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ ☘️', '/menu']
 ], m,)}
 
 handler.command = /^linkgc|grupos|grupossharkbot|sharkbotgrupos|gruposdesharkbot|groupofc|grupossk|grupobt|groupskb$/i

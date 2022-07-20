@@ -57,25 +57,25 @@ let name = await conn.getName(m.sender)
 const listMessage = {
 text: `╭─────────────────────☠️\n│${ucapan()}\n│⚙️•.¸⚙️¸.• *${name}* •.¸⚙️¸.•⚙️\n╰─────────────────────☠️
 ╭━━━〔 *${wm}* 〕━━━⬣
-┃✪ *Tiempo Actual | Current Time*	    
+┃✪ *Tiempo Actual*	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Activa durante | Active during* 
+┃✪ *Activa durante* 
 ┃➺ ${uptime}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ *Versión de Shark-Bot*
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) | Users*
+┃✪ *Usuario(s)*
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Modo | Mode*
-┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊 - 𝙋𝙍𝙄𝙑𝘼𝙏𝙀' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊 - 𝙋𝙐𝘽𝙇𝙄𝘾'}
+┃✪ *Modo*
+┃➺ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃✪ *Chat(s) Prohibido(s)*
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
+┃✪ *Usuario(s) Prohibido(s)*
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`, footer: `${wm}`, //${name} ${ucapan()}
 title: null,
