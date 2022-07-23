@@ -1,8 +1,9 @@
 let handler = async (m, { args, usedPrefix, command, conn }) => {
 let fa = `
 ${mg}𝘿𝙀𝘽𝙀 𝘿𝙀 𝙐𝙎𝘼𝙍 𝘿𝙀 𝙇𝘼 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 𝙈𝘼𝙉𝙀𝙍𝘼:
+𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝙐𝙎𝙀 𝘼𝙎 𝙁𝙊𝙇𝙇𝙊𝙒𝙎:
 
-𝙀𝙅𝙀𝙈𝙋𝙇𝙊
+𝙀𝙅𝙀𝙈𝙋𝙇𝙊 | 𝙀𝙓𝘼𝙈𝙋𝙇𝙀
 *${usedPrefix + command} 50*`.trim()
 
 if (!args[0]) throw fa
@@ -10,7 +11,7 @@ if (isNaN(args[0])) throw fa
 let apuesta = parseInt(args[0])
 let users = global.db.data.users[m.sender]
 let time = users.lastmining + 10000
-if (new Date - users.lastmining < 10000) throw `𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊
+if (new Date - users.lastmining < 10000) throw `𝙑𝙐𝙀𝙇𝙑𝘼 𝙀𝙉 *${msToTime(time - new Date())}* 𝙋𝘼𝙍𝘼 𝘾𝙊𝙉𝙏𝙄𝙉𝙐𝘼𝙍 𝘼𝙋𝙊𝙎𝙏𝘼𝙉𝘿𝙊`
 
 if (apuesta < 5) throw `${ag}𝘿𝙀𝘽𝙀 𝘿𝙀 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙐𝙉 𝙈𝙄𝙉𝙄𝙈𝙊 𝘿𝙀 *5*\n\n𝙔𝙊𝙐 𝙈𝙐𝙎𝙏 𝘽𝙀𝙏 𝘼 𝙈𝙄𝙉𝙄𝙈𝙐𝙈 𝙊𝙁 *5*`
 if (users.exp < apuesta) {
@@ -41,13 +42,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} EXP*`
+end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} EXP*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} EXP*`
 users.exp += apuesta
 } else if (a == b || a == c || b == c) {
-end = `😯 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +50 EXP*`
+end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +50 EXP*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +50 EXP*`
 users.exp += 50
 } else {
-end = `😥 *HA PERDIDO!! ❌ -${apuesta} EXP*`
+end = `😿 *HA PERDIDO!! ❌ -${apuesta} EXP*\n\n*HAS LOST!! ❌ -${apuesta} EXP*`
 users.exp -= apuesta
 }
 users.lastslot = new Date * 1
@@ -62,14 +63,14 @@ let s = `
  ────────
 🎰 |   *SLOTS*   | 🎰`
 await conn.sendHydrated(m.chat, `${s}\n\n${end}`, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕', `${usedPrefix}slot1 ${apuesta}`],
+['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot1 ${apuesta}`],
 ['🦈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝑺𝑯𝑨𝑹𝑲𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
 ], m,)}        
         
         
 if (command == 'slot2') {
-let emojis = ["🦈", "🐓", "🐙"];
+let emojis = ["🐈", "🐓", "🐙"];
 let a = Math.floor(Math.random() * emojis.length);
 let b = Math.floor(Math.random() * emojis.length);
 let c = Math.floor(Math.random() * emojis.length);
@@ -93,13 +94,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} SharkCoins*`
+end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} SharkCoins*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} SharkCoins*`
 users.money += apuesta
 } else if (a == b || a == c || b == c) {
-end = `😯 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +30 SharkCoins*`
+end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +30 SharkCoins*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +30 SharkCoins*`
 users.money += 30
 } else {
-end = `😥 *HA PERDIDO!! ❌ -${apuesta} SharkCoins*`
+end = `😿 *HA PERDIDO!! ❌ -${apuesta} SharkCoins*\n\n*HAS LOST!! ❌ -${apuesta} SharkCoins*`
 users.money -= apuesta
 }
 users.lastslot = new Date * 1
@@ -114,7 +115,7 @@ let ss = `
  ────────
 🎰 |   *SLOTS*   | 🎰`
 await conn.sendHydrated(m.chat, `${ss}\n\n${end}`, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-['🦈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕', `${usedPrefix}slot2 ${apuesta}`],
+['🦈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot2 ${apuesta}`],
 ['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
 ], m,)}
@@ -145,13 +146,13 @@ if (c == emojis.length) c = 0;
 }
 let end;
 if (a == b && b == c) {
-end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} Diamantes*`
+end = `✨ *QUE PRO!! HAS GANADO +${apuesta + apuesta} Diamantes*\n\n🥳 *COOL!! YOU JUST WON +${apuesta + apuesta} Diamantes*`
 users.limit += apuesta
 } else if (a == b || a == c || b == c) {
-end = `😯 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +2 Diamantes*`
+end = `🙀 *CASI!!, VUELVA A INTENTAR*\n*BONO DE +2 Diamantes*\n\n😯 *ALMOST!!, TRY AGAIN*\n*BONDS OF +2 Diamantes*`
 users.limit += 2
 } else {
-end = `😥 *HA PERDIDO!! ❌ -${apuesta} Diamantes*`
+end = `😿 *HA PERDIDO!! ❌ -${apuesta} Diamantes*\n\n*HAS LOST!! ❌ -${apuesta} Diamantes*`
 users.limit -= apuesta
 }
 users.lastslot = new Date * 1
@@ -174,13 +175,6 @@ await conn.sendHydrated(m.chat, `${sss}\n\n${end}`, wm, null, md, '𝐒𝐡𝐚�
         
 if (command == 'slot') {       
 await conn.sendHydrated(m.chat, `*Elija en que apostará el valor de ${apuesta}*`, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
-['🦈 𝑺𝑯𝑨𝑹𝑲𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
-['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
-], m,)}
-        
-if (command == 'apostar') {       
-await conn.sendHydrated(m.chat, `*Elija en que apostará el valor de ${apuesta}*\n\n*Choose what you will bet the value of ${apuesta}*`, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['⚡ 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
 ['🦈 𝑺𝑯𝑨𝑹𝑲𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`],
 ['💎 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎', `${usedPrefix}slot3 ${apuesta}`]
