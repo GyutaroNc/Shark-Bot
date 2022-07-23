@@ -44,7 +44,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.exp))
                     user.exp = 0
                 if (!isNumber(user.limit))
-                    user.limit = 10
+                    user.limit = 20
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!('registered' in user))
@@ -263,7 +263,9 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat))
                     chat.delete = true
                 if (!('modohorny' in chat))
-                    chat.modohorny = false    
+                    chat.modohorny = false
+                if (!('stickers' in chat))
+                    chat.stickers = false
                 if (!('autosticker' in chat))
                     chat.autosticker = false                    
                 if (!('audios' in chat))
@@ -289,6 +291,7 @@ export async function handler(chatUpdate) {
                     sDemote: '',
                     delete: true,
                     modohorny: true,
+                    stickers: true,
                     autosticker: false,
                     audios: true,
                     antiLink: false,
@@ -496,11 +499,11 @@ export async function handler(chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy cantidad*\n\n𝙄𝙏 𝙃𝘼𝙎 𝙉𝙊 𝘿𝙄𝘼𝙈𝙊𝙉𝘿𝙎. 💎 𝙔𝙊𝙐 𝘾𝘼𝙉 𝘽𝙐𝙔 𝙒𝙄𝙏𝙃 𝙏𝙃𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}buy cantidad*`, m)
+                    this.reply(m.chat, `${ag}𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝘿𝙄𝘼𝙈𝘼𝙉𝙏𝙀𝙎. 💎 𝙋𝙐𝙀𝘿𝙀 𝘾𝙊𝙈𝙋𝙍𝘼𝙍 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}buy cantidad*`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${plugin.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*\n\n𝙈𝙐𝙎𝙏 𝙍𝙀𝘼𝘾𝙃 𝙏𝙃𝙀 𝙇𝙀𝙑𝙀𝙇 #️⃣ *${plugin.level}* 𝙏𝙊 𝘽𝙀 𝘼𝘽𝙇𝙀 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿. 𝙔𝙊𝙐𝙍 𝙇𝙀𝙑𝙀𝙇 𝙄𝙎 #️⃣ *${_user.level}* 𝙐𝙋𝘿𝘼𝙏𝙀 𝙒𝙄𝙏𝙃 𝘾𝙊𝙈𝙈𝘼𝙉𝘿 *${usedPrefix}level*`, m)
+                    this.reply(m.chat, `𝙉𝙀𝘾𝙀𝙎𝙄𝙏𝘼 𝙀𝙇 𝙉𝙄𝙑𝙀𝙇 ➡️ *${plugin.level}* 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐𝙎𝘼𝙍 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊. 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝙀𝙎 ➡️ *${_user.level}* 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼 𝙏𝙐 𝙉𝙄𝙑𝙀𝙇 𝘾𝙊𝙉 𝙀𝙇 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 *${usedPrefix}nivel*`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -642,11 +645,11 @@ export async function participantsUpdate({ id, participants, action }) {
                     } catch (e) {
                     } finally {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝙂𝙧𝙪𝙥𝙤 𝙂𝙚𝙣𝙞𝙖𝙡 🦈*') :
-                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+                            (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user)) //.replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
-                            this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
-                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
-                            ['👻 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
+                            this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
+                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
+                            ['👻 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪', '/menu']
                             ], '', { mentions: [user]})
                            }
                 }
