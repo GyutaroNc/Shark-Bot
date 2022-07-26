@@ -7,13 +7,13 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
     global.db.data.users[m.sender].money -= xpperlimit * count
     global.db.data.users[m.sender].limit += count
     //conn.reply(m.chat, `
-    let gata = `
+    let shark = `
 ╭━━〔 *DATOS DE COMPRA* 〕━━⬣
 ┃ *Compra Efectuada* : +${count} 💎 
 ┃ *Ha Gastado* :  -${xpperlimit * count} 𝐒𝐡𝐚𝐫𝐤𝘾𝙊𝙄𝙉𝙎
 ╰━━━━━〔 *🦈 ${vs}* 〕━━━━⬣`.trim()
     
-await conn.sendHydrated(m.chat, gata, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
+await conn.sendHydrated(m.chat, shark, wm, null, md, '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['💵 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓10', '.buy2 10'],
 ['💸 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙓20', '.buy2 20'],
 ['⚡ 𝘾𝙤𝙢𝙥𝙧𝙖𝙧 𝙘𝙤𝙣 𝙀𝙭𝙥𝙚𝙧𝙞𝙚𝙣𝙘𝙞𝙖', '/buy']

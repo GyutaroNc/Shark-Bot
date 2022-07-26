@@ -3,8 +3,8 @@ import axios from 'axios'
 let handler = async(m, { conn, args, usedPrefix, command }) => {
 let res = await axios("https://meme-api.herokuapp.com/gimme/Christmas")
 let json = res.data
-let gata = json.url
-conn.sendButton(m.chat, `_Navidad 🧑‍🎄_`, wm, gata, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)
+let shark = json.url
+conn.sendButton(m.chat, `_Navidad 🧑‍🎄_`, wm, shark, [['𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏 🆕', `/${command}`]], m)
 }
 handler.help = ['navidad']
 handler.tags = ['internet']
