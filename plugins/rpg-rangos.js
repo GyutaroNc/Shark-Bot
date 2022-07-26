@@ -73,57 +73,108 @@ let menu = `
 𝙉𝙊𝙈𝘽𝙍𝙀
 ${username}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
+𝙏𝙐  𝙍𝘼𝙉𝙂𝙊 𝘼𝘾𝙏𝙐𝘼𝙇
 ${role}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-👑 *∞ ÉLITE GLOBAL* 💎🏁
-👑 *ÉLITE GLOBAL* 🏁
+👑 *∞ ÉLITE GLOBAL II* 💎🏁
+👑 *∞ ÉLITE GLOBAL II* 💎🏁
+👑 *∞ ÉLITE GLOBAL III* 💎🏁
+👑 *∞ ÉLITE GLOBAL IV* 💎🏁
+👑 *∞ ÉLITE GLOBAL V* 💎🏁
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👑 *ÉLITE GLOBAL I* 🏁
+👑 *ÉLITE GLOBAL II* 🏁
+👑 *ÉLITE GLOBAL III* 🏁
+👑 *ÉLITE GLOBAL IV* 🏁
+👑 *ÉLITE GLOBAL V* 🏁
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *TOP ASTRAL I* ⚜️🔱
 *TOP ASTRAL II* ⚜️🔱
 *TOP ASTRAL III* ⚜️🔱
+*TOP ASTRAL IV* ⚜️🔱
+*TOP ASTRAL V* ⚜️🔱
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *ESTELAR I* ☄️
 *ESTELAR II* ☄️
 *ESTELAR III* ☄️
+*ESTELAR IV* ☄️
+*ESTELAR V* ☄️
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *LEYENDA I* 🏆
 *LEYENDA II* 🏆
 *LEYENDA III* 🏆
+*LEYENDA IV* 🏆
+*LEYENDA V* 🏆
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *LEGENDARIO(A) I* 🛡️
 *LEGENDARIO(A) II* 🛡️
 *LEGENDARIO(A) III* 🛡️
+*LEGENDARIO(A) IV* 🛡️
+*LEGENDARIO(A) V* 🛡️
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *SUPER PRO I* 🎩
 *SUPER PRO II* 🎩
 *SUPER PRO III* 🎩
-*PRO EN SHARKBOT I* 😼
-*PRO EN SHARKBOT II* 😼
-*PRO EN SHARKBOT III* 😼
+*SUPER PRO IV* 🎩
+*SUPER PRO V* 🎩
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+*PRO EN SHARKBOT I* 🦈
+*PRO EN SHARKBOT II* 🦈
+*PRO EN SHARKBOT III* 🦈
+*PRO EN SHARKBOT IV* 🦈
+*PRO EN SHARKBOT V* 🦈
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *DIAMANTE I* 💎
 *DIAMANTE II* 💎
 *DIAMANTE III* 💎
+*DIAMANTE IV* 💎
+*DIAMANTE V* 💎
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *ORO I* 🏅
 *ORO II* 🏅
 *ORO III* 🏅
+*ORO IV* 🏅
+*ORO V* 🏅
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *PLATA I* 🔮
 *PLATA II* 🔮
 *PLATA III* 🔮
+*PLATA IV* 🔮
+*PLATA V* 🔮
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *IRON I* 🦾
 *IRON II* 🦾
 *IRON III* 🦾
+*IRON IV* 🦾
+*IRON V* 🦾
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *MAESTRO(A) I* ⚒️
 *MAESTRO(A) II* ⚒️
 *MAESTRO(A) III* ⚒️
+*MAESTRO(A) IV* ⚒️
+*MAESTRO(A) V* ⚒️
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *EXPLORADOR(A) I* 🪓
 *EXPLORADOR(A) II* 🪓
 *EXPLORADOR(A) III* 🪓
+*EXPLORADOR(A) IV* 🪓
+*EXPLORADOR(A) V* 🪓
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *APRENDIS I* 🪚
 *APRENDIS II* 🪚
 *APRENDIS III* 🪚
+*APRENDIS IV* 🪚
+*APRENDIS V* 🪚
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *NOVATO(A) I* 🪤
 *NOVATO(A) II* 🪤
 *NOVATO(A) III* 🪤
+*NOVATO(A) IV* 🪤
+*NOVATO(A) V* 🪤
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
 conn.sendHydrated(m.chat, menu, `𝙍𝘼𝙉𝙂𝙊𝙎 | ${wm}`, pp, 'https://github.com/GyutaroNc/Shark-Bot', '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 💫', '.allmenu'],
-['𝙏𝙤𝙥𝙨 🏆', `${usedPrefix}top`],
+['𝙏𝙤𝙥𝙨 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 🏆', `${usedPrefix}top`],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 ⚡', '#menu']
 ], m,)
 

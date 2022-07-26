@@ -3,11 +3,11 @@ let handler = async(m, { conn }) => {
 if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍`
 
 let nombre = '𝐒𝐡𝐚𝐫𝐤-𝐁𝐨𝐭ㅤ🦈'
-let nombre2 = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 🔥'
+let nombre2 = '𝐄𝐥 𝐂𝐡𝐞𝐦𝐚 🔥' 
  
 const s = [
 'https://c.tenor.com/-8qgEEd80skAAAAi/chika.gif',
-'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif',
+'https://c.tenor.com/GLpWclhFs28AAAAi/mine-funny.gif', 
 'https://c.tenor.com/KyoAsIz_GH8AAAAi/heat-wave.gif',
 'https://c.tenor.com/4cNykyUM0M0AAAAi/draxy-stickery.gif',
 'https://c.tenor.com/-I1sYsJQ-XUAAAAi/vibe-dance.gif',  
@@ -21,7 +21,7 @@ const s = [
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }
-handler.customPrefix = /animada|animado|alegré|alegre|feliz|felis|contento|contenta|gusto|alegría|alegrarse|alegremonos|emocionado|emocionada|😀|😃|😄|😁|😸|😺|👻/i 
+handler.customPrefix = /animada|animado|alegré|alegre|feliz|felis|contento|contenta|gusto|alegría|alegrarse|alegremonos|emocionado|emocionada|😀|😃|😄|😁|🤧|🦈|👻/i 
 handler.command = new RegExp
 handler.exp = 50
 export default handler
